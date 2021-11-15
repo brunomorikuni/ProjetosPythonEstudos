@@ -1,0 +1,26 @@
+Sub relatorio()
+
+
+lin = 2
+linha = 2
+Do Until Sheets("Dados").Cells(lin, 1) = " "
+    If Sheets("Dados").Cells(lin, 9) >= "7292,679637" Then
+        Sheets("Planilha1").Cells(linha, 1) = Sheets("Dados").Cells(lin, 1)
+        Sheets("Planilha1").Cells(linha, 2) = Sheets("Dados").Cells(lin, 2)
+        Sheets("Planilha1").Cells(linha, 3) = Sheets("Dados").Cells(lin, 3)
+        Sheets("Planilha1").Cells(linha, 4) = Sheets("Dados").Cells(lin, 4)
+        Sheets("Planilha1").Cells(linha, 5) = Sheets("Dados").Cells(lin, 5)
+        Sheets("Planilha1").Cells(linha, 6) = Sheets("Dados").Cells(lin, 6)
+        Sheets("Planilha1").Cells(linha, 7) = Sheets("Dados").Cells(lin, 7)
+        Sheets("Planilha1").Cells(linha, 8) = Sheets("Dados").Cells(lin, 8)
+        Sheets("Planilha1").Cells(linha, 9) = Sheets("Dados").Cells(lin, 9)
+        
+        linha = linha + 1
+    End If
+    lin = lin + 1
+
+
+Loop
+
+
+End Sub
